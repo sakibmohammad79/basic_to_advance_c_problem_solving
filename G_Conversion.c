@@ -13,10 +13,12 @@ int main()
             str[i] = ' ';
         }
         else if(str[i] >= 'a' && str[i] <= 'z'){
-            str[i] = toupper(str[i]);
+            // str[i] = toupper(str[i]);
+            str[i] = (str[i] -32);
         }
         else if(str[i] >= 'A' && str[i] <= 'Z'){
-            str[i] = tolower(str[i]);
+            // str[i] = tolower(str[i]);
+            str[i] = (str[i] + 32);
         }
     }
 
