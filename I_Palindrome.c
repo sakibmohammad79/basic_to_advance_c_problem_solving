@@ -7,14 +7,12 @@ int main()
     int wordLen = strlen(word);
     int firstindex = 0;
     int lastIndex = wordLen -1;
-    int palindrom = 1;
+    int palindrom = 0;
     for(int i = 0, j=lastIndex; i<j; i++, j--){
         if(word[i] == word[j]){
             palindrom = 1;
         }
-        else{
-            palindrom = 0;
-        }
+        
     }
     if(palindrom){
         printf("YES");
