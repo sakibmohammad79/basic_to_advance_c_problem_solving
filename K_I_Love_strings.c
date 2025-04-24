@@ -13,15 +13,13 @@ int main() {
         int t_len = strlen(t);
         int i = 0, j = 0;
 
-        for (; i < s_len && j < t_len; i++, j++) {
+        for (i, j; i < s_len && j < t_len; i++, j++) {
             printf("%c%c", s[i], t[j]);
         }
-
         while (i < s_len) {
             printf("%c", s[i]);
             i++;
         }
-
         while (j < t_len) {
             printf("%c", t[j]);
             j++;
