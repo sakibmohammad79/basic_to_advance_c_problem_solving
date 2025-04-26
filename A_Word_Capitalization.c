@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main() {
-    char word[104];
+    char word[1001];
     scanf("%s", word);
 
     if (word[0] >= 'a' && word[0] <= 'z') {
