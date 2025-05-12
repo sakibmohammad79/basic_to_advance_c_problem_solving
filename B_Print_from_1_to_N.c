@@ -1,17 +1,16 @@
 #include<stdio.h>
 
-void print(int i, int n){
-    
-    if(i>n){
+void print(int n){
+
+    if(n == 0){
         return;
     }
-    printf("%d\n", i);
-    print(i+1, n);
+    print(n-1);
+    printf("%d\n", n);
 }
 int main()
 {
     int n; scanf("%d", &n);
-    int i = 1;
-    print(i, n);
+    print(n);
     return 0;
 }
