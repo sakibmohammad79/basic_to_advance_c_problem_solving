@@ -1,1 +1,1 @@
-It's not scaler matrix!
+It's not unit matrix!
