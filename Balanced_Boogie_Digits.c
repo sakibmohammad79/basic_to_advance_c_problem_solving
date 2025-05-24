@@ -10,10 +10,12 @@ int main()
 
         while (n > 0) {
             int digit = n % 10;
-            if (digit % 2 == 0)
+            if (digit % 2 == 0){
                 even++;
-            else
+            }
+            else{ 
                 odd++;
+            }
             n = n / 10;
         }
 
